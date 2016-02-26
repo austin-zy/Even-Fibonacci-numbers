@@ -18,12 +18,17 @@ public class EvenFibonacciNumbers {
         // TODO code application logic here
         int x = 1;
         int fib = 2;
-        while(fib<89){
+        int total = 0;
+        while(fib<4000000){
+            if (fib%2==0){
+                total = total+fib;
+            }
             int temp = fib;
             fib = x+fib;
             x=temp;
-            System.out.print(fib+", ");
+                
         }
+        System.out.println("The total is:"+total);
     }
     
 }
